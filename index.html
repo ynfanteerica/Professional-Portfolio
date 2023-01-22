@@ -17,11 +17,11 @@
     <nav>
         <h2 class="logo" id="home">Portfo<span>lio</span></h2>
         <ul>
-            <li><a href="#home">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#aboutme">About me</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="resume.html">Resume</a></li>
-            <li><a href="#contactme">Contact me</a></li>
+            <li><a href="#overlay">Contact me</a></li>
           
         </ul>
     </nav>
@@ -40,10 +40,10 @@
     <div class="main">
         <img src="./assets/images/nubelson-fernandes-UcYBL5V0xWQ-unsplash.jpg">
         <div class="about-text">
-            <h2>About Me</h2>
-            <h5>Developer <span>& Designer</span></h5>
+            <h2><span>About </span>Me</h2>
+           
             <p> A Junior Web Developer passionate about creating interactive applications and experiences on the web. If you are a bussiness seeking a web presence or an employer looking to hire, you can get in touch with me here.</p>
-            <button type="button">Let's Talk</button>
+            <button><a class="button-two" href="#">Hire Me</a></button>
         </div>
     </div>
    </section>
@@ -68,14 +68,14 @@
 
       <div class="card">
         <i class="fa-regular fa-images"></i>
-        <h5>Web Developement</h5>
+        <h5>Group 7 To do lists</h5>
           <div class="pra">
-           <p>Your audience won’t chase you down. Make it easy to engage, offer multiple points of contact: phone, email, social media and maybe an easy-to-use contact form. A Google map is a bonus. Above all, ensure that this information is readily available on an easy-to-find contact page—if not every page of your site.</p>
+           <p>This  app to-do list includes form validation, which prevents you from entering incorrect information. It has a soft touch with its visuals and also lets you update your status to keep everyone working as a team. Enter the tasks you need completed, let everyone on your team know your progress, and delete them when they are completed.</p>
             <p style ="text-align: center;">
-            <a  class="button" href="#">Read More</a>
+            <a  class="button" href="#">Link to Website</a>
             </p>
             <br>
-            <a  class="button" href="#">Read More</a>
+            <a  class="button" href="#">github repo</a>
                  </p>
    </div>
  </div>
@@ -99,19 +99,40 @@
   </div>
   <div class ="contact-me" id="contactme">
     <p>Let Me Get You A Beautiful Website</p>
-    <a class="button-two" href="#">Hire Me</a>
+   
   </div>
   <!-------footer start------>
   <footer>
     <div class="card-2">
-    <p>Erica Ynfante</p>
+    
     <div class="social">
-      <a href="#"><i class="fa-brands fa-github"></i></a>
-      <a href="#"><i class="fa-regular fa-envelope"></i></a>
-      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/ynfanteerica"><i class="fa-brands fa-github"></i></a>
+    
+      <a href="https://linkedin.com/in/erica-ynfante-51a57067"><i class="fa-brands fa-linkedin"></i></a>
    </div>
   </div>
-    <p class="end">Copyright By Erica Ynfante</p>
-  </footer>
+</footer>
+      <div id = "overlay">
+        <form onsubmit="event.preventDefault(); validateForm();">
+          <h1>Contact Me</h1>
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Your name">
+          <small class="error"></small>
+          <label for="email">Email:</label>
+          <input type="text" id="email" placeholder="Your email">
+          <small class="error"></small>
+          <label for="message">Message:</label>
+          <textarea id="message" placeholder="Your message" rows="6"></textarea>
+          <small class="error"></small>
+          <div class="center">
+            <input type="submit" value="Send Message">
+            <p id="success"></p>
+          </div>
+        </form>
+      </div>
+
+ 
+  <script src=" https://smtpjs.com/v3/smtp.js"></script>
+  <script src="./assets/script.js"></script>
  </body>
 </html>

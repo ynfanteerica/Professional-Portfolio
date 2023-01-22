@@ -145,6 +145,8 @@ h4{
 .about img {
     height: auto;
     width: 430px;
+    -webkit-filter: grayscale(100%);
+  filter: grayscale(100%)
 }
 .about-text{
     width: 550px;
@@ -499,4 +501,67 @@ p{
 .about1 .box1 .text h4{
     color: #003147;
   
+}
+
+/*Contact form*/
+form {
+    max-width: 550px;
+    width: 90%;
+    background: white;
+    margin: 17vh auto 0 auto;
+    padding: 40px;
+    border-radius: 3px;
+    box-sizing: border-box;
+ 
+
+}
+form h1 {
+    display: block;
+    margin: 20px 0;
+    color:#101010;
+}
+label {
+    display: block;
+    margin: 20px 0;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    border-bottom: 1px solid #D3D3D3;
+}
+input[type="text"]:focus, textarea:focus{
+    border-bottom: 1px solid rgb(255,0,106);
+}
+textarea::-webkit-scrollbar-thumb{
+    background-color: rgb(255,0,106);
+}
+.center {
+    text-align: center;
+}
+input[type="submit"] {
+    margin-top: 30px;
+    width: 90%;
+    max-width: 200px;
+    background: linear-gradient(to right, rgb(255,0,106), rgb(255,67,61));
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 3px;
+
+}
+
+.error {
+    color: red;
+
+}
+
+.error-border {
+    border-bottom: 1px solid red;
+}
+
+#success {
+    color: #28A745;
 }
