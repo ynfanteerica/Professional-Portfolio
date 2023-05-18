@@ -42,7 +42,7 @@
         <div class="about-text">
             <h2><span>About </span>Me</h2>
            
-            <p> A Junior Web Developer passionate about creating interactive applications and experiences on the web. If you are a bussiness seeking a web presence or an employer looking to hire, you can get in touch with me here.</p>
+            <p> A Junior Web Developer passionate about creating interactive applications and experiences on the web. If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me here.</p>
             <button><a class="button-two" href="#">Hire Me</a></button>
         </div>
     </div>
@@ -61,8 +61,7 @@
                  <a  class="button" href="https://ynfanteerica.github.io/JavaScript-Password-Generator/">Link to Website</a>
                  </p>
                  <br>
-                 <a  class="button" href="https://github.com/ynfanteerica/JavaScript-Password-Generator">github repo</a>
-                 </p>
+                
         </div>
       </div>
 
@@ -72,11 +71,10 @@
           <div class="pra">
            <p>This  app to-do list includes form validation, which prevents you from entering incorrect information. It has a soft touch with its visuals and also lets you update your status to keep everyone working as a team. Enter the tasks you need completed, let everyone on your team know your progress, and delete them when they are completed.</p>
             <p style ="text-align: center;">
-            <a  class="button" href="#">Link to Website</a>
+            <a  class="button" href="https://isisrobbs.github.io/JWD_FinalProject_Group7/">Link to Website</a>
             </p>
             <br>
-            <a  class="button" href="#">github repo</a>
-                 </p>
+            
    </div>
  </div>
  <div class="card">
@@ -91,8 +89,7 @@
         <a  class="button" href=" https://ynfanteerica.github.io/Drawing-App/">Link to Website</a>
         </p>
         <br>
-        <a  class="button" href="https://github.com/ynfanteerica/Drawing-App">github repo</a>
-                 </p>
+       
       </div>
      </div>
     </div>
@@ -113,16 +110,16 @@
   </div>
 </footer>
       <div id = "overlay">
-        <form onsubmit="event.preventDefault(); validateForm();">
+        <form onsubmit="event.preventDefault(); validateForm();" id="contactForm" action="https://formsubmit.co/your@email.com" method="POST">
           <h1>Contact Me</h1>
           <label for="name">Name:</label>
-          <input type="text" id="name" placeholder="Your name">
+          <input type="text" name ="name" id="name" placeholder="Your name">
           <small class="error"></small>
           <label for="email">Email:</label>
-          <input type="text" id="email" placeholder="Your email">
+          <input type="text"  name="email"id="email" placeholder="Your email">
           <small class="error"></small>
           <label for="message">Message:</label>
-          <textarea id="message" placeholder="Your message" rows="6"></textarea>
+          <textarea id="message" name="message" placeholder="Your message" rows="6"></textarea>
           <small class="error"></small>
           <div class="center">
             <input type="submit" value="Send Message">

@@ -4,12 +4,15 @@ const email = document.querySelector("#email");
 const message = document.querySelector("#message");
 const success = document.querySelector("#success");
 const errorNodes = document.querySelectorAll(".error");
+const contactform = document.getElementById("contactForm");
+
 
 //Validate data
 function validateForm(){
 
     clearMessages();
     let errorFlag = false;
+    
 
 if(nameInput.value.length < 1) {
   errorNodes[0].innerText = "Name cannot be blank";
@@ -45,18 +48,26 @@ function clearMessages() {
 function emailIsValid(email) {
     let pattern = /\S+@\S+\.\S+/;
     return pattern.test(email);
+    
 }
 
-function sendEmail(){
-    Email.send({
-        Host : "smtp.aol.com",
-        Username : "ynfanteerica@aol.com",
-        Password : "",
-        To : 'ynfanteerica@aol.com',
-        From : document.querySelector("#email").value,
-        Subject : "This is the subject",
-        Body : "And this is the body"
-    }).then(
-      message => alert(message)
-    );
-}
+contactform.addEventListener("submit", (e) => {
+    e.preventDefault();
+  
+   
+  
+    if (nameInput.value == "" || email.value == "" || message.value  == "") {
+      alert("Ensure you input a value in both fields!");
+    } else {
+      // perform operation with form input
+      alert("This form has been successfully submitted!");
+      console.log(
+        `This form has a username of ${nameInput.value} and email of ${email.value} confirmation message${message.value}`
+      );
+  
+      nameInput.value = "";
+      email.value = "";
+      message.value = "";
+
+    }
+  });
